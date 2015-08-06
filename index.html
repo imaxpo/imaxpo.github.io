@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>EagleGamer iOS</title>
+<style>
+html {height: 100%; margin-bottom: 10px; overflow-y: scroll;}
+body {color: #666; background-color: #eee; font:normal normal 100 15px/20px cambria, Serif;  text-shadow:2px 2px 10px #ccc;}
+h1 {font-size: 35px; margin-bottom: 10px; padding-top:10px; padding-bottom:5px; border-bottom: 1px solid #eb0; text-shadow:0px 0px 3px #ccc; color:#aaa;}
+h1 small {font:normal normal 100 15px/15px verdana, sans-serif; padding-left: 20px; color:#0be;}
+h2, h3, h4 {margin-bottom: 5px;}
+h3{ color:#aaa; border-bottom:3px solid #aaa;}
+h4{ color:#555; background-color:#ddd; padding:5px 0px 5px 15px;}
+p {margin-top: 5px; margin-left:10px;}
+pre {background-color: #F6F6F6;}
+code {border:dashed 1px #aaa; padding:5px;}
+nav {font-size: 20px; text-align:right; margin-bottom:20px; display:block; width:100%; float:right;}
+nav a {margin: 10px; padding:5px; color: #c00; text-shadow:2px 2px 10px #555; text-align:right; }
+nav a:hover {color: #0be; border-top:3px solid #0be;  }
+
+
+img{box-shadow: 2px 2px 5px #aaa; margin:5px;}
+img a {border:0px solid #fff;}
+a {color:#c00; text-decoration: none; cursor: pointer;	cursor: hand;}
+a:hover {color: #0be; }
+
+
+#allcontent {margin: 0 auto; width: 80%;}
+#footer {color: #888; border-top:1px dotted #888; text-align:center;}
+.selectednav {color:#0be;}
+</style>		
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"> </script>
+<script type="text/javascript" src="js/jquery.fontSize.js"> </script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+		$('.increase').fontSize({
+action: "up",
+elements: "#content",
+max: 36
+});
+
+		$('.decrease').fontSize({
+action: 'down',
+elements: "#content"
+});
+		})
+</script> 
+<script type="text/javascript">
+$(document).ready(function(){
+		$(".page").hide();
+		$("#page0").fadeIn(1000);
+
+		$("#link0").click(function(){
+			$(".page").hide();
+			$("#page0").fadeIn();
+			});
+
+		$("#link1").click(function(){
+			$(".page").hide();
+			$("#page1").fadeIn();
+			});
+
+		$("#link2").click(function(){
+			$(".page").hide();
+			$("#page2").fadeIn(2000);
+			});
+
+		$("#link3").click(function(){
+			$(".page").hide();
+			$("#page3").slideDown()
+			});
+
+		$("#link4").click(function(){
+				$(".page").hide();
+				$("#page4").fadeIn(1500);
+				});
+});
+</script>
+
+</head>
+
+<body>
+<div id="allcontent">
+<div id="headandnav">
+<img src=img/eagle_logo.png></img>
+<h1>EagleGamer iOS<small>[ <a href="http://www.eaglegamer.com">EagleGamer Site</a> ]</small>
+<a href="#" class="increase box" title="Increase text size">A+</a>
+<a href="#" class="decrease box" title="Decrease Text Sise">A-</a> 
+</h1>
+<nav>
+<a id="link0">Production</a>
+<a id="link1">About</a>
+<a id="link2">Play</a>
+<a id="link3">Download</a>
+<a id="link4">Contact</a>
+</nav>
+</div>
+
+<div id="content">
+
+<div id="page0" class="page">
+<h2>Production</h2>
+<p>
+<h4>Install EagleGamer</h4>
+<div>
+<a href="itms-services:///?action=download-manifest&url=https://imaxpo.github.io/EagleGamer/EagleGamer.plist"><img src=img/iphone_btn_down.png /></a>
+</div>
+</p>
+
+<div>
+<h4>iOS Version 1.4.1 (2015.07.29)</h4>
+<ul>
+<li>
+Support iCade for NDS.
+</li>
+</ul>
+</div>
+
+<div>
+<h4>iOS Version 1.4.0 (2015.07.08)</h4>
+<ul>
+<li>
+Fix Bug: iOS 7 Crash when open MAME, ARCADE.
+</li>
+<li>
+Fix Bug: Can't open the early game.
+</li>
+</ul>
+</div>
+
+<div>
+<h4>iOS Version 1.3.9 (2015.07.02)</h4>
+<ul>
+<li>
+Add MAME Emulator.
+</li>
+<li>
+Add ARCADE Emulator.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.8 (2015.06.17)</h4>
+<ul>
+<li>
+Add NDS Setting.
+</li>
+<li>
+Fix Bug. open NDS in iOS 6,7.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.7 (2015.06.16)</h4>
+<ul>
+<li>
+Add NDS State Controller.
+</li>
+<li>
+Update UI. Change Exit NDS Button Color to Red.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.6 (2015.06.16)</h4>
+<ul>
+<li>
+Fix Bug. Support NDS iOS 6 , 7.
+</li>
+<li>
+Update UI. Adapt NDS Full Screen.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.5 (2015.06.15)</h4>
+<ul>
+<li>
+Add NDS virtual board.
+</li>
+<li>
+Update NDS speed, make it more fast.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.4 (2015.06.08)</h4>
+<ul>
+<li>
+Add. Add NDS Support.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.3 (2015.05.25)</h4>
+<ul>
+<li>
+Fix Bug. Delete Game: deselect Game also delete game.
+</li>
+<li>
+Fix Bug. remove Favorite Game also show in my game -&gt;Favorite.
+</li>
+<li>
+Fix Bug. remove Favorite Game cause crash.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.2 (2015.05.25)</h4>
+<ul>
+<li>
+Fix iOS6, 7 My Favorite UI.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.1 (2015.05.21)</h4>
+<ul>
+<li>
+Add My Favorite.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.3.0</h4>
+<ul>
+<li>
+Update UI in Home Page.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.2.0</h4>
+<ul>
+<li>
+Check Update
+</li>
+<li>
+Install Count.
+</li>
+<li>
+Show Icon When Install.
+</li>
+</ul>
+</div>
+<div>
+<h4>iOS Version 1.1.1</h4>
+<ul>
+<li>
+Fixed the bugs when starting the emulator, such as GBA、MD、FC、WSC、GBC、SFC.
+</li>
+<li>
+Solved the problems of force close and black screen when playing the games.
+</li>
+<li>
+Optimized adaptation between Eagle gamepad and APP.
+</li>
+</ul>
+</div>
+<h4>QR Code</h4>
+<div>
+<img src="img/eagle_qr_code.png" />
+</div>
+</div>
+
+<div id="page1" class="page">
+
+<h2>About EagleGamer</h2>
+<p>
+<h4>About</h4>
+The Eagle App specially designed for mobile users is available on all platforms for maximum configurability, collect all kinds of Emulator games to free download!
+<p />
+Thanks to 
+<p />
+<a href=http://www.libretro.com>RetroArch (http://www.libretro.com)</a>
+<p />
+<a href=http://imame4all.googlecode.com>iMAME4ALL</a>
+<p />
+<a href=https://github.com/nitrogen/nitrogen>NDS</a>
+<p />
+and 
+<p />
+<a href=http://www.ppsspp.org>PPSSPP (http://www.ppsspp.org).</a>
+<p />
+All simulator copyright turns over to the original author.
+</p>
+<h4>Developed by</h4>
+<p>jiaxianhua(<a href="www.eaglegamer.com">www.eaglegamer.com)</a>
+</p>
+</div>
+
+
+<div id="page2"  class="page">
+<h2>Usage</h2>
+<p>
+<h4>Get ipa</h4>
+<ol>
+<li>Install <i>EagleGamer</i></li>
+<li>Connection BlueTooth</li>
+<li>Open EagleGamer.
+<ul>
+<li>Select <i>Category</i> TabBar.</li>
+<li>Select <i>One Category</i> Emulator.</li>
+<li>Download Game</li>
+<li>Select <i>My Games</i> TabBar.</li>
+<li>Open <i>Downloaded</i> Game.</li>
+<li>Click <i>Resume</i> on the left top button.</li>
+</ul>
+</li><br />
+<li>GamePad tap <i>Home</i> and <i>.(one dot)</i> in <b>KeyBoard Mode.</b></li>
+<li>Now, you can play. Just Go!</li>
+</ol>
+</p>
+</div>
+
+
+<div id="page3" class="page"> 
+<h2>FREE Download!!</h2>
+<h4>Download this file, by right-click and save as</h4>
+<ul>
+<li><a href="https://eaglegamer.github.io/EagleGamer/EagleGamer.ipa">EagleGamer.ipa</a> Don't click on this link; instead right-click and save-as.</li>
+</ul>
+<h4>Install</h4>
+<ul>
+<li>iOS version installation method:</li>
+<ul>
+<li>No need jailbreak to free installation: directly online installation by scanning the two-dimension bar-code from official website.
+</li>
+<li>
+If you can't get online installation, please install through iTunes from your computer.
+</li> 
+</ul>
+</ul>
+</div>
+
+<div id="page4" class="page"> 
+<h2>Contact EagleGamer</h2>
+<h4>Website</h4>
+<p>Official Home Page(<a href="http://www.imaxpo.com">www.imaxpo.com</a>)</p>
+<p>EagleGamer Home Page(<a href="http://www.eaglegamer.com">www.eaglegamer.com</a>)</p>
+<h4>Email</h4>
+<p>Please sent E-mail to tech#imaxpo.com</p>
+<h4>Form</h4>
+<p>For Feedback form: <a href="http://www.eaglegamer.com/">click here</a></p>
+</div>
+<div id="footer">Copyright &copy; 2014. All Rights ShenZhen MAXPO Technology Company.,<br><a href="http://www.eaglegamer.com">www.eaglegamer.com</a></div>
+</div>
+</body>
+</html>
+

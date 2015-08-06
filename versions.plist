@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1.0</key>
+	<array>
+		<string>First release</string>
+	</array>
+	<key>1.1.1</key>
+	<array>
+		<string>Fixed the bugs when starting the emulator, such as GBA、MD、FC、WSC、GBC、SFC. </string>
+		<string>Solved the problems of force close and black screen when playing the games. </string>
+		<string>Optimized adaptation between Eagle gamepad and APP. </string>
+	</array>
+	<key>1.2.0</key>
+	<array>
+		<string>Check Update.</string>
+		<string>Count Install.</string>
+		<string>Show Icon When Install.</string>
+	</array>
+	<key>1.3.0</key>
+	<array>
+		<string>Update UI in Home Page.</string>
+	</array>
+	<key>1.3.1</key>
+	<array>
+		<string>My Favorite.</string>
+	</array>
+	<key>1.3.2</key>
+	<array>
+		<string>Fix iOS6, 7 MyFavorite UI.</string>
+	</array>
+	<key>1.3.3</key>
+	<array>
+		<string>Fix Bug. Delete Game: deselect Game also delete game.</string>
+		<string>Fix Bug. remove Favorite Game also show in my game -&gt;Favorite.</string>
+		<string>Fix Bug. remove Favorite Game cause crash.</string>
+	</array>
+	<key>1.3.4</key>
+	<array>
+		<string>New nds support.</string>
+	</array>
+	<key>1.3.5</key>
+	<array>
+		<string>Add NDS virtual board.</string>
+		<string>Update NDS speed, make it more fast.</string>
+	</array>
+	<key>1.3.6</key>
+	<array>
+		<string>Fix Bug. Support NDS iOS 6, 7.</string>
+		<string>Update UI. NDS Support Fullscreen.</string>
+	</array>
+	<key>1.3.7</key>
+	<array>
+		<string>Add NDS State Controller.</string>
+		<string>Update UI. Change Exit NDS Button Color to Red.</string>
+	</array>
+	<key>1.3.8</key>
+	<array>
+		<string>Add NDS Setting.</string>
+		<string>Fix Bug. open NDS in iOS 6,7.</string>
+	</array>
+	<key>1.3.9</key>
+	<array>
+		<string>Add MAME Emulator.</string>
+		<string>Add ARCADE Emulator.</string>
+	</array>
+	<key>1.4.0</key>
+	<array>
+		<string>Fix Bug: iOS 7 Crash when open MAME, ARCADE.</string>
+		<string>Fix Bug: Can&apos;t open the early game.</string>
+	</array>
+	<key>1.4.1</key>
+	<array>
+		<string>iCade Support for NDS.</string>
+	</array>
+</dict>
+</plist>
